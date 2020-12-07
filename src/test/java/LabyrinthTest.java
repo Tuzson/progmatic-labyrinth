@@ -5,12 +5,14 @@
  */
 
 import com.progmatic.labyrinthproject.Coordinate;
+import com.progmatic.labyrinthproject.LabyrinthImpl;
 import com.progmatic.labyrinthproject.enums.CellType;
 import com.progmatic.labyrinthproject.enums.Direction;
 import com.progmatic.labyrinthproject.exceptions.CellException;
 import com.progmatic.labyrinthproject.exceptions.InvalidMoveException;
 import com.progmatic.labyrinthproject.interfaces.Labyrinth;
 import com.progmatic.labyrinthproject.interfaces.Player;
+import com.progmatic.labyrinthproject.randomPlayer;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -382,12 +384,12 @@ public class LabyrinthTest {
     
     // TODO
     private Labyrinth getLabyrinthImpl() {
-        return null;
+        return new LabyrinthImpl();
     }
     
     // TODO
     private Player getRandomPlayerImpl() {
-        return null;
+        return new randomPlayer();
     }
     
     // TODO
